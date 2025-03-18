@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  overflow: hidden;
+}
+
+.image-container {
+  left: 5.6vw;
+  right: 5.6vw;
+  display: flex;
+  max-height: 72vh;
+  width: 90%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: absolute;
+  top: 15.4%;
+}
+
+.lrng {
+  max-height: 100%;
+  max-width: 100%;
+  min-width: max-content;
+  position: relative;
+  object-fit: contain;
+}
+
+.ceux {
+  height: 100%;
+  right: 5.6vw;
+  min-width: max-content;
+  width: 100%;
+  position: relative;
+  object-fit: contain;
+}
+
+.photography {
+  color: #5f5f5f;
+  font-size: 0.9rem;
+  top: 5.6vw;
+  left: 5.6vw;
+  font-family: "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  position: absolute;
+  z-index: 1;
+}
+
+.title,
+.title1 {
+  color: #e3e3e3;
+  font-size: 1.1rem;
+  bottom: 8vh;
+  font-family: "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  position: absolute;
+  z-index: 1;
+}
+
+.title {
+  left: 5.6vw;
+}
+
+.title1 {
+  right: 5.6vw;
+}
+
+.button {
+  text-decoration: none;
+  cursor: pointer;
+  max-width: fit-content;
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .image-container {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .photography {
+    top: 5.6vw;
+  }
+
+  .threelines {
+    top: 5.6vw;
+    right: 4vw;
+  }
+
+  .image-container {
+    top: 8.5vh;
+    max-height: 82vh;
+  }
+
+  .title,
+  .title1 {
+    bottom: 5.6vw;
+  }
+  .lrng,
+  .ceux {
+    object-fit: contain;
+    min-width: auto;
+  }
+
+  .ceux {
+    width: 110%;
+    left: 0%;
+  }
+}

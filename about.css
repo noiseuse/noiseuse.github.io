@@ -1,0 +1,55 @@
+body {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Arial Narrow", Arial, sans-serif;
+  font-size: 9px;
+  font-weight: normal;
+  letter-spacing: 1.6px;
+  word-spacing: 2px;
+  color: #0d0d0d;
+  background-color: #faf9f6;
+}
+
+.about {
+  text-transform: uppercase;
+  position: fixed;
+  top: 25px;
+  left: 25px;
+  text-align: left;
+}
+
+a:link,
+a:visited {
+  color: #111111;
+  font-family: "Arial Narrow", Arial, sans-serif;
+  letter-spacing: 1.6px;
+  text-decoration: none;
+}
+
+.box {
+  height: 1.2vh;
+  width: 50vw;
+  margin-bottom: -0.2vh;
+  background: var(--dark);
+  display: block;
+}
+
+#contact {
+  text-transform: uppercase;
+  position: fixed;
+  top: 25px;
+  left: 25px;
+  text-align: left;
+  z-index: 1500;
+}
+
+#img_indexdesktop {
+  text-transform: uppercase;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: 320px;
+  text-align: left, bottom;
+  z-index: 1500;
+}
