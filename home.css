@@ -19,7 +19,7 @@ body::after {
 }
 
 .photography,
-.video,
+.film,
 .about,
 .contact {
   font-family: "Arial Narrow", Arial, sans-serif;
@@ -36,7 +36,7 @@ body::after {
 }
 
 .photography,
-.video {
+.film {
   top: 5.6vw;
 }
 
@@ -46,7 +46,7 @@ body::after {
 }
 
 .contact,
-.video {
+.film {
   right: 5.6vw;
 }
 
@@ -76,7 +76,7 @@ body::after {
 }
 
 .photography:hover,
-.video:hover,
+.film:hover,
 .information:hover,
 .contact:hover {
   color: #5f5f5f;
