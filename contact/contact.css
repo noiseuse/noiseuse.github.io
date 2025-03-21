@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #fffdf8;
+  background-color: #faf9f6;
   overflow: hidden;
 }
 
@@ -123,7 +123,6 @@ a:link,
 a:visited {
   color: #111111;
   font-family: "Arial Narrow", Arial, sans-serif;
-  letter-spacing: 1.6px;
   text-decoration: none;
   bottom: 5.6vw;
 }

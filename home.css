@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #fffdf8;
+  background-color: #faf9f6;
   overflow: hidden;
 }
 
@@ -19,7 +19,7 @@ body::after {
 }
 
 .photography,
-.filmdev,
+.video,
 .about,
 .contact {
   font-family: "Arial Narrow", Arial, sans-serif;
@@ -31,12 +31,12 @@ body::after {
 }
 
 .photography,
-.contact {
+.about {
   left: 5.6vw;
 }
 
 .photography,
-.filmdev {
+.video {
   top: 5.6vw;
 }
 
@@ -45,8 +45,8 @@ body::after {
   bottom: 5.6vw;
 }
 
-.about,
-.filmdev {
+.contact,
+.video {
   right: 5.6vw;
 }
 
@@ -76,7 +76,7 @@ body::after {
 }
 
 .photography:hover,
-.filmdev:hover,
+.video:hover,
 .information:hover,
 .contact:hover {
   color: #5f5f5f;
