@@ -31,7 +31,7 @@ body::after {
 }
 
 .photography,
-.about {
+.contact {
   left: 5.6vw;
 }
 
@@ -45,7 +45,7 @@ body::after {
   bottom: 5.6vw;
 }
 
-.contact,
+.about,
 .filmdev {
   right: 5.6vw;
 }

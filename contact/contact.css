@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fffdf8;
+  overflow: hidden;
+}
+
+body::after {
+  background-color: black;
+  bottom: 0;
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  transition: opacity 300ms;
+  z-index: -1;
+}
+
+.contact {
+  font-family: "Arial Narrow", Arial, sans-serif;
+  position: absolute;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #282828;
+  z-index: 2;
+  right: 5.6vw;
+  bottom: 5.6vw;
+}
+
+#return {
+  text-transform: uppercase;
+  width: 320px;
+  text-align: left;
+  font-size: 0.9rem;
+  color: #282828;
+  margin-left: 10%;
+  bottom: 5.6vw;
+  position: absolute;
+}
+
+.index:hover {
+  color: #5f5f5f;
+}
+
+.typing-container {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 50vh;
+  transform: translateY(-50%);
+  text-transform: uppercase;
+}
+
+.button {
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.typing-container {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 50vh;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.typing-container input[type="email"],
+.typing-container input[type="text"],
+.typing-container textarea {
+  width: 35%;
+}
+
+.typing-container input[type="text"],
+.typing-container input[type="email"] {
+  border: none;
+  border-bottom: 1.5px solid #282828;
+  outline: none;
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  background-color: transparent;
+  color: #282828;
+  text-transform: uppercase;
+  font-family: "Arial Narrow", Arial, sans-serif;
+}
+
+.typing-container textarea {
+  height: 150px;
+  resize: none;
+  outline: none;
+  font-size: 2rem;
+  line-height: 2rem;
+  padding: 0.5rem 0;
+  border: none;
+  background-color: transparent;
+  color: #282828;
+  caret-color: #282828;
+  font-family: "Arial Narrow", Arial, sans-serif;
+}
+
+.typing-container button {
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-family: "Arial Narrow", Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: transparent;
+  color: #282828;
+  border: none;
+  cursor: pointer;
+  transition: background-color 200ms;
+}
+
+.typing-container button:hover {
+  color: #5f5f5f;
+}
+
+a:link,
+a:visited {
+  color: #111111;
+  font-family: "Arial Narrow", Arial, sans-serif;
+  letter-spacing: 1.6px;
+  text-decoration: none;
+  bottom: 5.6vw;
+}
+
+#submit-button {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s ease, visibility 1s ease;
+}
+
+#submit-button.visible {
+  opacity: 1;
+  visibility: visible;
+}

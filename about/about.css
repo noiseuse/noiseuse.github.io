@@ -11,6 +11,17 @@ body {
   background-color: #faf9f6;
 }
 
+.title {
+  color: #5f5f5f;
+  font-size: 0.9rem;
+  bottom: 5.6vw;
+  right: 5.6vw;
+  font-family: "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  position: absolute;
+  z-index: 1;
+}
+
 .about {
   text-transform: uppercase;
   position: fixed;
@@ -35,16 +46,7 @@ a:visited {
   display: block;
 }
 
-#contact {
-  text-transform: uppercase;
-  position: fixed;
-  top: 25px;
-  left: 25px;
-  text-align: left;
-  z-index: 1500;
-}
-
-#img_indexdesktop {
+#return {
   text-transform: uppercase;
   position: fixed;
   bottom: 20px;

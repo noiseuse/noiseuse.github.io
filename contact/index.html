@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+
+  <body>
+    <script src="ceux.js"></script>
+    <div class="contact">CONTACT</div>
+
+    <form
+      class="typing-container"
+      action="https://formsubmit.co/lore.a.scwhartz@gmail.com"
+      method="POST">
+      <input type="hidden" name="_subject" value="New submission!" />
+      <input type="hidden" name="_template" value="table" />
+      <input type="hidden" name="_captcha" value="false" />
+      <textarea name="Message" required autofocus></textarea>
+      <input type="text" name="Name" placeholder="Name" required />
+      <input type="email" name="Email" placeholder="Email" required />
+      <button id="submit-button" type="submit">Send</button>
+    </form>
+
+    <div id="return">
+      <a href="/" class="index">HOME</a>
+    </div>
+  </body>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const nameInput = document.querySelector('input[name="Name"]');
+      const emailInput = document.querySelector('input[name="Email"]');
+      const messageInput = document.querySelector('textarea[name="Message"]');
+      const submitButton = document.getElementById("submit-button");
+
+      function toggleButtonVisibility() {
+        if (
+          nameInput.value.trim() !== "" &&
+          emailInput.value.trim() !== "" &&
+          messageInput.value.trim() !== ""
+        ) {
+          submitButton.classList.add("visible"); // Add the visible class
+        } else {
+          submitButton.classList.remove("visible"); // Remove the visible class
+        }
+      }
+
+      // Add event listeners to all input fields
+      nameInput.addEventListener("input", toggleButtonVisibility);
+      emailInput.addEventListener("input", toggleButtonVisibility);
+      messageInput.addEventListener("input", toggleButtonVisibility);
+    });
+  </script>
+</html>
