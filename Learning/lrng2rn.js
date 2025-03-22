@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let currentImageIndex = 1;
 
   function updateImageInfo(index) {
-    const images = document.querySelectorAll(".image");
+    const images = document.querySelectorAll(".image, .first");
     const visibleImage = images[index - 1];
     const title = visibleImage.getAttribute("data-title");
     const year = visibleImage.getAttribute("data-year");
@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   imageContainer.addEventListener("scroll", function () {
-    const images = document.querySelectorAll(".image");
+    const images = document.querySelectorAll(".image, .first");
     let closestImageIndex = 0;
     let closestImageDistance = Infinity;
 
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 window.addEventListener("load", function () {
-  const images = document.querySelectorAll(".image");
+  const images = document.querySelectorAll(".image, .first");
 
   function adjustImageHeight() {
     images.forEach(function (image) {
@@ -65,7 +65,7 @@ window.addEventListener("load", function () {
 });
 
 window.onload = function () {
-  const images = document.querySelectorAll(".image");
+  const images = document.querySelectorAll(".image, .first");
   const photographyElements = document.querySelectorAll(".photography");
   const photographyElements1 = document.querySelectorAll(".first");
   const infoCollectElements = document.querySelectorAll(".info_collect");
