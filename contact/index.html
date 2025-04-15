@@ -12,8 +12,14 @@
     <script src="contact.js"></script>
     <div class="contact">CONTACT</div>
 
-    <form class="typing-container" action="/contact/contact.php" method="post">
-      <textarea name="Message" id="message" required autofocus></textarea>
+    <form
+      class="typing-container"
+      action="https://formspree.io/f/mgvakkna"
+      method="POST">
+      <input type="hidden" name="_subject" value="New submission!" />
+      <input type="hidden" name="_template" value="table" />
+      <input type="hidden" name="_captcha" value="false" />
+      <textarea name="Message" required autofocus></textarea>
       <input type="text" name="Name" placeholder="Name" required />
       <input type="email" name="Email" placeholder="Email" required />
       <button id="submit-button" type="submit">Send</button>
