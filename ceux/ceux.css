@@ -181,12 +181,13 @@ body {
 
 @media (max-width: 600px) {
   .first {
-    max-width: 100%; /* Prevent images from squishing on small screens */
-    height: auto; /* Allow images to adjust their height */
+    max-width: 100%;
+    height: auto;
   }
   .image {
-    padding-left: 0px;
-    height: 82vh;
+    padding-left: 0;
+    max-width: 100%;
+    height: auto;
   }
 
   .photography {
@@ -206,7 +207,12 @@ body {
 
   .image-container {
     top: 8.5vh;
-    max-height: 82vh;
+    max-height: 72vh;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    position: absolute;
   }
 
   .title {
